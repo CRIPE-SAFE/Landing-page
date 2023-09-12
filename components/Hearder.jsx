@@ -10,7 +10,7 @@ const Hearder = () => {
        <div className='container mx-auto flex md:flex-row flex-col justify-center items-center gap-8 mt-12'>
            <Link href="/" target='_blank' className='bg-black  flex justify-center items-center gap-4 text-white py-4  text-center rounded-full lg:w-[20%] md:w-[35%]  w-[80%]'>
             <AiFillApple/>
-            <p>Download for ios</p>
+            <p>Coming soon</p>
            </Link>
            <Link href="/" target='_blank' className='bg-black flex justify-center items-center gap-4 text-white py-4 text-center rounded-full  lg:w-[20%] md:w-[35%]  w-[80%]'>
             <AiFillAndroid/>
