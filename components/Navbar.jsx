@@ -9,9 +9,9 @@ const Navbar = () => {
           <Link href="/">
              <Image src="/Group.svg" height={50} width={100}/>
           </Link>
-           <button className='py-2 px-8  from-lightRed to-darkerRed bg-gradient-to-b rounded-full text-white transition'>
+           <Link href="" className='py-2 px-8  from-lightRed to-darkerRed bg-gradient-to-b rounded-full text-white transition'>
              Download
-           </button>
+           </Link>
         </div>
     </header>
   )
