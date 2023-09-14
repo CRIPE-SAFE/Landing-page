@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+
 
 const Card = ({data}) => {
   return (
@@ -9,3 +10,4 @@ const Card = ({data}) => {
 }
 
 export default Card
+
