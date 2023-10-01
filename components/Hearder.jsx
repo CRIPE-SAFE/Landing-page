@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'next/link'
+import Link from 'next/link';
 import {AiFillApple,AiFillAndroid} from "react-icons/ai"
 
 const Hearder = () => {
@@ -12,7 +12,7 @@ const Hearder = () => {
             <AiFillApple/>
             <p>Coming soon</p>
            </Link>
-           <Link href="/" target='_blank' className='bg-black flex justify-center items-center gap-4 text-white py-4 text-center rounded-full  lg:w-[20%] md:w-[35%]  w-[80%]'>
+           <Link href="https://play.google.com/store/apps/details?id=com.vent.cripe" target='_blank' className='bg-black flex justify-center items-center gap-4 text-white py-4 text-center rounded-full  lg:w-[20%] md:w-[35%]  w-[80%]'>
             <AiFillAndroid/>
              <p>Download for Andriod</p>
             </Link>

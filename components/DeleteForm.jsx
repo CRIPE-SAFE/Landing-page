@@ -12,7 +12,12 @@ const DeleteForm = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
   
-
+    const config = {
+        headers: { 
+            'content-type': 'application/json',
+            'Access-Control-Allow-Origin': "*"
+        }
+    }
 
 
     const handleDelete =  async () => {
@@ -24,7 +29,7 @@ const DeleteForm = () => {
                 params: {
                     username: username,
                     password: password,
-                },
+                }, 
             })
             .then((response) => {
                 console.log(response.data.message);
@@ -36,24 +41,39 @@ const DeleteForm = () => {
             });
     };
 
-   
+    const handleGet =  async () => {
+        // Replace 'your_api_endpoint' with the actual endpoint URL
+    
+        
+       await axios
+            .get("https://thadd-dev-realm.ey.r.appspot.com/ping")
+            .then((response) => {
+                console.log(response.data.message);
+                console.log(response.data)
+                sucessNotify()
+            })
+            .catch((error) => {
+                console.log(error)
+                 
+                 errorNotify()
+            });
+    };
+
+    
 
 
 
+    
 
-
-
-
-
-
-
-
+  
+    
     return (
         <>
   
         <div className='mx-auto py-6 md:px-8 px-4 mt-14 h-full'>
             
             <div className='flex flex-col justify-center items-center lg:mx-32 md:mx-4 text-center'>
+                <button onClick={handleGet}>Fettttt</button>
                 <h1 className=' lg:text-5xl md:text-3xl text-base font-medium  mt-8'>Delete account</h1>
                 <p className='mt-1 md:text-lg text-sm'>Please note that account deletion is irreversible, and all your data, including posts, messages, and profile information, will be permanently removed from our servers. If you ever decide to return to Cripe, you'll need to create a new account.</p>
 
