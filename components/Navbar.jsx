@@ -9,7 +9,7 @@ const Navbar = () => {
           <Link href="/">
              <Image src="/Group.svg" height={50} width={100}/>
           </Link>
-           <Link href="" className='py-2 px-8  from-lightRed to-darkerRed bg-gradient-to-b rounded-full text-white transition'>
+           <Link href="https://play.google.com/store/apps/details?id=com.vent.cripe" target='_blank' className='py-2 px-8  from-lightRed to-darkerRed bg-gradient-to-b rounded-full text-white transition'>
              Download
            </Link>
         </div>
